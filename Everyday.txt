@@ -1,0 +1,3 @@
+Client ID: 88ccb51ac58332d7b9904fae832ea7cf4e90365e
+Client Secret: 4a1e752bdb68cd93a1b3233b3dbc60bc41cd4115
+Redirect URL: https://m.everyplay.com/auth
