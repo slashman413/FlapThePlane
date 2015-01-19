@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">拍拍飛機</string>
+    <string name="signin_other_error">登入時發生錯誤，請稍後再試</string>
+    <string name="signin_failure">無法登入</string>
+    <string name="sign_in_failed">登入失敗，請確認您的網路連線狀態後再試</string>
+    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="license_failed">License check failed.</string>
+    <string name="unknown_error">發生未知的錯誤</string>
+    <string name="title_activity_tutorial">導覽</string>
+    <string name="tutorial_title_settings">設定</string>
+    <string name="tutorial_description_settings">在\"Settings\"中能夠錄製並修改遊戲中的音效。</string>
+    <string name="tutorial_title_customize">遊戲音效</string>
+    <string name="tutorial_description_customize">按下\"Customize\"按鈕會跳出一個錄製遊戲音效的對話框。</string>
+    <string name="tutorial_title_record">錄音</string>
+    <string name="tutorial_description_record">按下錄音對話框中的\"Record\"按鈕以開始錄音，拍動的音效長度為１秒，得分的音效長度為２秒，墜落的音效長度為２秒。</string>
+    <string name="tutorial_title_enjoy">開始遊戲</string>
+    <string name="tutorial_description_enjoy">讓我們開始遊戲吧！</string>
+    <string name="finish">完成</string>
+
+</resources>

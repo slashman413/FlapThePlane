@@ -26,7 +26,8 @@ public class MainGame
         AssetLoader.load();
         gameScreen = new GameScreen(this);
         settingsScreen = new SettingsScreen(this);
-        setScreen(new SplashScreen(this));
+//        setScreen(new SplashScreen(this));
+        setScreen(gameScreen);
     }
 
     public void dispose()

@@ -19,6 +19,29 @@ public class GamePreferences {
     public static final String CUSTOM_SCORED_SOUND_FILENAME = "custom_scored_sound.mp3";
     public static final String CUSTOM_FALL_SOUND_FILENAME = "custom_fall_sound.mp3";
 
+    public static final String KEY_TUTORIAL_SHOWN = "tutorial_shown";
+
+    public static boolean isTutorialShown() {
+        Preferences prefs = Gdx.app.getPreferences(GamePreferences.KEY_APPLICATION_ROOT);
+        if (prefs.contains(GamePreferences.KEY_TUTORIAL_SHOWN)
+                && true == prefs.getBoolean(GamePreferences.KEY_TUTORIAL_SHOWN)) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void updateTutorialShown(final boolean shown) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Preferences prefs = Gdx.app.getPreferences(GamePreferences.KEY_APPLICATION_ROOT);
+
+                prefs.putBoolean(KEY_TUTORIAL_SHOWN, shown);
+                prefs.flush();
+            }
+        }).start();
+    }
+
     public static boolean useCustomFlapSound() {
         Preferences prefs = Gdx.app.getPreferences(GamePreferences.KEY_APPLICATION_ROOT);
         if (prefs.contains(GamePreferences.KEY_USE_CUSTOM_FLAP_SOUND)
