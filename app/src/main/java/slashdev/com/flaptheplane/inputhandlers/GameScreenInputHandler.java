@@ -209,7 +209,7 @@ public class GameScreenInputHandler extends Stage
         else if (this.myWorld.isHighScore())
         {
             this.game.getActionResolver().submitScoreGPGS(this.myWorld.getScore());
-            this.myWorld.menu();
+            this.myWorld.restart();
         }
         else if (this.myWorld.isRunning())
         {
